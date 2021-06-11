@@ -76,5 +76,35 @@
       }
     ],
     "script": "lotj.chat.routeMessage(\"tell\")"
+  },
+  {
+    "name": "say",
+    "patterns": [
+      {
+        "pattern": "^(.*)say(.*)\'(.*)\'$",
+        "type": "regex"
+      },
+      {
+        "pattern": "^\'(.*)\'(.*)say(.*)$",
+        "type": "regex"
+      },
+      {
+        "pattern": "^(.*)ask(.*)'(.*)'$",
+        "type": "regex"
+      }
+      {
+        "pattern": "^'(.*)'(.*)ask(.*)'$",
+        "type": "regex"
+      }
+      {
+        "pattern": "^(.*)exclaim(.*)'(.*)'$",
+        "type": "regex"
+      }
+      {
+        "pattern": "^'(.*)'(.*)exclaim(.*)$",
+        "type": "regex"
+      }
+    ],
+    "script": "lotj.chat.routeMessage(\"say\")"
   }
 ]
