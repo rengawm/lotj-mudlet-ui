@@ -21,7 +21,7 @@
     "name": "clan",
     "patterns": [
       {
-        "pattern": "{.*}<.*>\\[[a-zA-Z ]+\\][()<>A-Za-z ]*: ",
+        "pattern": "{.*}<.*>\\[[a-zA-Z0-9 ]+\\][()<>A-Za-z ]*: ",
         "type": "regex"
       },
       {
